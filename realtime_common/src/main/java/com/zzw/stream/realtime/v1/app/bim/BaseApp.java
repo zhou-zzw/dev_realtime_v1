@@ -35,6 +35,8 @@ import org.apache.hadoop.hbase.client.Connection;
 public class BaseApp {
     public static void main(String[] args) throws Exception {
 
+
+
                 // 获取Flink的流式执行环境，这是构建Flink流式作业的基础
                 StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
 
@@ -49,8 +51,10 @@ public class BaseApp {
                 // 从指定的Kafka主题Constant.TOPIC_DB中消费数据，消费者组为"dim_app"
                 KafkaSource<String> kafkaSource = FlinkSourceUtil.getKafkaSource(Constant.TOPIC_DB, "dim_app");
 
+
                 // 从Kafka数据源创建数据流，不使用水印策略，命名为"kafka_source"
                 DataStreamSource<String> kafkaStrDS = env.fromSource(kafkaSource, WatermarkStrategy.noWatermarks(), "kafka_source");
+
 
                 // 此代码行被注释，若取消注释，会将Kafka数据源的数据打印到控制台，用于调试
                 // kafkaStrDS.print();
