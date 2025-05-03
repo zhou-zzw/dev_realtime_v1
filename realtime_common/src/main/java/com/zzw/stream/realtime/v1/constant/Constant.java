@@ -13,7 +13,7 @@ public class Constant {
     public static final String TOPIC_DB = "zhengwei_zhou_db";
     public static final String TOPIC_LOG = "zhengwei_zhou_log";
 
-    public static final String MYSQL_HOST = "10.39.48.36";
+    public static final String MYSQL_HOST = "10.160.60.17";
     public static final int MYSQL_PORT = 3306;
     public static final String MYSQL_USER_NAME = "root";
     public static final String MYSQL_PASSWORD = "Zh1028,./";
@@ -74,3 +74,4 @@ public class Constant {
 //
 //    public static final String DORIS_DATABASE = "dev_pengyu_zhu";
 //}
+//./flink run-application -d -t yarn-application -ynm MysqlToKafka -yjm 900 -ytm 900 -yqu root.default -c com.zzw.stream.realtime.v1.app.ods.MysqlToKafka /opt/2207A/zhengwei_zhou/original-realtime_common-1.0-SNAPSHOT.jar
