@@ -4,7 +4,7 @@ package com.zzw.stream.realtime.v1.utils;
 import com.zzw.stream.realtime.v1.constant.Constant;
 
 /**
- * @author Felix
+ * @author zhengwei_zhou
  * @date 2024/6/04
  * FlinkSQL操作的工具类
  */

@@ -20,7 +20,7 @@ public class Constant {
     public static final String HBASE_NAMESPACE = "ns_zhengwei_zhou";
 
     public static final String MYSQL_DRIVER = "com.mysql.cj.jdbc.Driver";
-    public static final String MYSQL_URL = "jdbc:mysql://10.39.48.36:3306?useSSL=false";
+    public static final String MYSQL_URL = "jdbc:mysql://10.160.60.17:3306?useSSL=false";
 
     public static final String TOPIC_DWD_TRAFFIC_START = "dwd_traffic_start_zhengwei_zhou";
     public static final String TOPIC_DWD_TRAFFIC_ERR = "dwd_traffic_err_zhengwei_zhou";

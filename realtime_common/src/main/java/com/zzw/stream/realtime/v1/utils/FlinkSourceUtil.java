@@ -12,7 +12,7 @@ import org.apache.flink.connector.kafka.source.enumerator.initializer.OffsetsIni
 import java.util.Properties;
 
 /**
- * @author Felix
+ * @author zhengwei_zhou
  * @date 2024/5/28
  * 获取相关Source的工具类
  */
