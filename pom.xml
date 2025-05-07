@@ -10,12 +10,13 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>realtime_common</module>
+        <module>stream_realtime</module>
     </modules>
 
+
     <properties>
-        <java.version>1.8</java.version>
-        <maven.compiler.source>${java.version}</maven.compiler.source>
-        <maven.compiler.target>${java.version}</maven.compiler.target>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <flink.version>1.17.1</flink.version>
         <scala.version>2.12</scala.version>
@@ -24,6 +25,8 @@
         <fastjson.version>1.2.83</fastjson.version>
         <hbase.version>2.4.11</hbase.version>
     </properties>
+
+
     <dependencies>
         <dependency>
             <groupId>org.apache.flink</groupId>
@@ -64,23 +67,11 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.apache.hadoop</groupId>
-            <artifactId>hadoop-auth</artifactId>
-            <scope>provided</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.slf4j</groupId>
-                    <artifactId>slf4j-reload4j</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.20</version>
             <scope>provided</scope>
         </dependency>
-        <!-- Flink默认使用的是slf4j记录日志，相当于一个日志的接口,我们这里使用log4j作为具体的日志实现 -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
@@ -118,6 +109,8 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
+
+
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -158,7 +151,6 @@
                 <artifactId>flink-connector-hbase-2.2</artifactId>
                 <version>${flink.version}</version>
             </dependency>
-            <!--  https://mvnrepository.com/artifact/org.apache.doris/flink-doris-connector-1.17  -->
             <dependency>
                 <groupId>org.apache.doris</groupId>
                 <artifactId>flink-doris-connector-1.17</artifactId>
@@ -180,6 +172,11 @@
                 <version>3.3.0</version>
             </dependency>
             <dependency>
+                <groupId>org.apache.flink</groupId>
+                <artifactId>flink-statebackend-rocksdb</artifactId>
+                <version>${flink.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>io.lettuce</groupId>
                 <artifactId>lettuce-core</artifactId>
                 <version>6.2.4.RELEASE</version>
@@ -196,6 +193,8 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+
     <build>
         <plugins>
             <plugin>
