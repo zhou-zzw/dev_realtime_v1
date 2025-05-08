@@ -2,6 +2,7 @@ package com.zzw.stream.realtime.v1.utils;
 
 import org.apache.commons.lang3.time.DateFormatUtils;
 
+import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.ZoneOffset;
@@ -10,14 +11,13 @@ import java.util.Date;
 
 /**
  * @author zhengwei_zhou
- * @date 2024/5/29
- * 注意：使用SimpleDateFormat进行日期转换的话，存在线程安全的问题
- * 建议封装日期工具类的时候，使用jdk1.8提供的日期包下的类完成相关功能
+ * @date 2025-04-30
  */
 public class DateFormatUtil {
     private static final DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd");
     private static final DateTimeFormatter dtfForPartition = DateTimeFormatter.ofPattern("yyyyMMdd");
     private static final DateTimeFormatter dtfFull = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+    public final static String YYYY_MM_DD_HH_MM_SS = "yyyy-MM-dd HH:mm:ss";
 
     public static Integer now(){
         String yyyyMMdd = DateFormatUtils.format(new Date(), "yyyyMMdd");
@@ -71,7 +71,13 @@ public class DateFormatUtil {
         return dateTimeToTs(date + " 00:00:00");
     }
 
+    public static String format(Date date) {
+        return format(date, YYYY_MM_DD_HH_MM_SS);
+    }
+
+    public static String format(Date date, String format) {
+        SimpleDateFormat formatter = new SimpleDateFormat(format);
+        return formatter.format(date);
+    }
+
 }
-
-//
-

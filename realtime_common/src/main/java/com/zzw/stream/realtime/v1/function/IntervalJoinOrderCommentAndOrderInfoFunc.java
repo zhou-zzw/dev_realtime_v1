@@ -5,8 +5,8 @@ import org.apache.flink.streaming.api.functions.co.ProcessJoinFunction;
 import org.apache.flink.util.Collector;
 
 /**
- * @Package com.lzy.stream.realtime.v1.function.IntervalJoinOrderCommentAndOrderInfoFunc
- * @Author zheyuan.liu
+ * @Package com.zzw.stream.realtime.v1.function.IntervalJoinOrderCommentAndOrderInfoFunc
+ * @Author zhengwei_zhou
  * @Date 2025/5/7 10:24
  * @description:
  */

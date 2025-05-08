@@ -1,10 +1,12 @@
 package com.zzw.stream.realtime.v1.utils;
 
-import static com.zzw.stream.realtime.v1.utils.SiliconFlowApi.SiliconFlowApi.generateBadReview;
+//import static com.zzw.stream.realtime.v1.utils.SiliconFlowApi.SiliconFlowApi.generateBadReview;
+
+import static com.zzw.stream.realtime.v1.utils.SiliconFlowApi.generateBadReview;
 
 /**
- * @Package com.lzy.stream.realtime.v1.utils.CommonGenerateTempLate
- * @Author zheyuan.liu
+ * @Package com.zzw.stream.realtime.v1.utils.CommonGenerateTempLate
+ * @Author zhengwei_zhou
  * @Date 2025/5/7 10:25
  * @description:
  */

@@ -12,8 +12,8 @@ import org.apache.hadoop.conf.Configuration;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @Package com.lzy.stream.realtime.v1.utils.EnvironmentSettingUtils
- * @Author zheyuan.liu
+ * @Package com.zzw.stream.realtime.v1.utils.EnvironmentSettingUtils
+ * @Author zhengwei_zhou
  * @Date 2025/5/7 10:17
  * @description:
  */

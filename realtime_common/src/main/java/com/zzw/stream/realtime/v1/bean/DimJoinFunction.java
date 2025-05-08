@@ -3,7 +3,7 @@ package com.zzw.stream.realtime.v1.bean;
 import com.alibaba.fastjson.JSONObject;
 
 /**
- * @Package com.lzy.retail.v1.realtime.bean.DimJoinFunction
+ * @Package com.zzw.realtime.bean.DimJoinFunction
  * @Author zhengwei_zhou
  * @Date 2025/4/8 8:46
  * @description: DimJoinFunction

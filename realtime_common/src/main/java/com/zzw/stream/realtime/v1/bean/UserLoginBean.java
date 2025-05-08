@@ -6,7 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * @Package com.lzy.retail.v1.realtime.bean.UserLoginBean
+ * @Package com.zzw.stream.realtime.v1.bean.bean.UserLoginBean
  * @Author zhengwei_zhou
  * @Date 2025/4/8 9:01
  * @description: UserLoginBean

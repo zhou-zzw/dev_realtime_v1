@@ -8,8 +8,8 @@ import java.util.List;
 import java.util.Random;
 
 /**
- * @Package com.lzy.stream.realtime.v1.utils.SensitiveWordsUtils
- * @Author zheyuan.liu
+ * @Package com.zzw.stream.realtime.v1.utils.SensitiveWordsUtils
+ * @Author zhengwei_zhou
  * @Date 2025/5/7 10:12
  * @description: 工具类
  */

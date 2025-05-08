@@ -20,8 +20,8 @@ import java.util.Iterator;
 import java.util.Map;
 
 /**
- * @Package com.lzy.stream.realtime.v1.utils.HbaseUtils
- * @Author zheyuan.liu
+ * @Package com.zzw.stream.realtime.v1.utils.HbaseUtils
+ * @Author zhengwei_zhou
  * @Date 2025/5/7 18:03
  * @description:
  */

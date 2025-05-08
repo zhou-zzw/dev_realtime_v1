@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 
 /**
- * @Package com.lzy.retail.v1.realtime.bean.TradeProvinceOrderAmount
+ * @Package com.zzw.stream.realtime.v1.bean.TradeProvinceOrderAmount
  * @Author zhengwei_zhou
  * @Date 2025/4/8 11:19
  * @description: TradeProvinceOrderAmount

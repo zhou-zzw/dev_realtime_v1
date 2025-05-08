@@ -16,8 +16,8 @@ import java.util.ArrayList;
 import java.util.Properties;
 
 /**
- * @Package com.lzy.stream.realtime.v1.utils.KafkaUtils
- * @Author zheyuan.liu
+ * @Package com.zzw.stream.realtime.v1.utils.KafkaUtils
+ * @Author zhengwei_zhou
  * @Date 2025/5/7 10:22
  * @description:
  */

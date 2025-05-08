@@ -1,8 +1,8 @@
 package com.zzw.stream.realtime.v1.function;
 
 import com.alibaba.fastjson.JSONObject;
-import com.lzy.stream.realtime.v1.bean.TableProcessDwd;
-import com.lzy.stream.realtime.v1.utils.JdbcUtil;
+import com.zzw.stream.realtime.v1.bean.TableProcessDwd;
+import com.zzw.stream.realtime.v1.utils.JdbcUtil;
 import org.apache.flink.api.common.state.BroadcastState;
 import org.apache.flink.api.common.state.MapStateDescriptor;
 import org.apache.flink.api.common.state.ReadOnlyBroadcastState;
@@ -15,8 +15,8 @@ import java.sql.Connection;
 import java.util.*;
 
 /**
- * @Package com.lzy.stream.realtime.v1.function.BaseDbTableProcessFunction
- * @Author zheyuan.liu
+ * @Package com.zzw.stream.realtime.v1.function.BaseDbTableProcessFunction
+ * @Author zhengwei_zhou
  * @Date 2025/4/30 9:37
  * @description: BaseDbTableProcessFunction
  */

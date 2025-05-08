@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 
 /**
- * @Package com.lzy.retail.v1.realtime.bean.TrafficUvCt
+ * @Package com.zzw.stream.realtime.v1.bean.TrafficUvCt
  * @Author zhengwei_zhou
  * @Date 2025/4/8 13:56
  * @description: TrafficUvCt

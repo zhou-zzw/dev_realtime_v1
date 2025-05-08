@@ -2,10 +2,9 @@ package com.zzw.app.sensitive;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.zzw.stream.realtime.v1.utils.ConfigUtils;
-import com.zzw.stream.realtime.v1.utils.EnvironmentSettingUtils;
-import com.zzw.stream.realtime.v1.utils.KafkaUtils;
-import com.zzw.stream.realtime.v1.utils.SensitiveWordsUtils;
+import com.zzw.stream.realtime.v1.function.AsyncHbaseDimBaseDicFunc;
+import com.zzw.stream.realtime.v1.function.IntervalJoinOrderCommentAndOrderInfoFunc;
+import com.zzw.stream.realtime.v1.utils.*;
 import org.apache.flink.api.common.eventtime.WatermarkStrategy;
 import org.apache.flink.api.common.functions.RichMapFunction;
 import org.apache.flink.configuration.Configuration;
@@ -24,8 +23,8 @@ import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @Package com.zzw.DbusBanBlackListUserInfo2Kafka
- * @Author zheyuan.liu
+ * @Package com.zzw.app.sensitive.DbusBanBlackListUserInfo2Kafka
+ * @Author zhengwei_zhou
  * @Date 2025/5/7 10:01
  * @description: 敏感词
  */

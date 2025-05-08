@@ -8,8 +8,8 @@ import java.io.IOException;
 import java.util.Properties;
 
 /**
- * @Package com.lzy.stream.realtime.v1.utils.ConfigUtils
- * @Author zheyuan.liu
+ * @Package com.zzw.stream.realtime.v1.utils.ConfigUtils
+ * @Author zhengwei_zhou
  * @Date 2025/5/7 10:09
  * @description: 工具类
  */
