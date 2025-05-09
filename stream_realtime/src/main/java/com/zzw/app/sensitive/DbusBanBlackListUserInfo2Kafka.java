@@ -39,6 +39,8 @@ public class DbusBanBlackListUserInfo2Kafka {
         sensitiveWordsLists = SensitiveWordsUtils.getSensitiveWordsLists();
     }
 
+
+
     private static final String kafka_botstrap_servers = ConfigUtils.getString("kafka.bootstrap.servers");
     private static final String kafka_cdc_db_topic = ConfigUtils.getString("kafka.cdc.db.topic");
     private static final String kafka_db_fact_comment_topic = ConfigUtils.getString("kafka.db.fact.comment.topic");
