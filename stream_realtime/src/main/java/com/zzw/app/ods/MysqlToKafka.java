@@ -21,6 +21,7 @@ public class MysqlToKafka {
 // 这个执行环境是Flink程序的基础，用于配置和执行流式计算任务
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
 
+
 // 设置任务的并行度为2
 // 并行度表示任务在集群中并行执行的线程或进程数量
 // 这里设置为2意味着任务将以2个并行的线程或进程来执行
@@ -36,7 +37,7 @@ public class MysqlToKafka {
 // 并为这个数据源命名为"MySQL Source"，方便后续监控和调试
         DataStreamSource<String> mySQLSource = env.fromSource(realtimeV1, WatermarkStrategy.noWatermarks(), "MySQL Source");
 
-//        mySQLSource.print();
+        mySQLSource.print();
 // 这行代码被注释掉了，如果取消注释，会将从MySQL读取的数据打印到控制台
 // 通常用于调试阶段查看数据
 

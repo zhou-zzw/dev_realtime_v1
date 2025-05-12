@@ -11,6 +11,7 @@
     <modules>
         <module>realtime_common</module>
         <module>stream_realtime</module>
+        <module>stream-deploy</module>
     </modules>
 
 
