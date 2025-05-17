@@ -60,7 +60,6 @@ public class DwdBaseLog {
         DataStreamSource<String> kafkaStrDS = env
                 .fromSource(kafkaSource, WatermarkStrategy.noWatermarks(), "Kafka_Source");
 
-
         // 注释掉的代码，若取消注释，会将从Kafka读取的原始数据打印到控制台，用于调试
 //        kafkaStrDS.print();
 
