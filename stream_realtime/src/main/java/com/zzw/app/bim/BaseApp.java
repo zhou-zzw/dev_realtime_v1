@@ -189,6 +189,7 @@ public class BaseApp {
                 // 将TableProcessDim数据流广播出去
                 BroadcastStream<TableProcessDim> broadcastDS = tpDS.broadcast(mapStateDescriptor);
 
+
                 // 将过滤后的JSON对象数据流与广播流连接起来
                 BroadcastConnectedStream<JSONObject, TableProcessDim> connectDS = jsonObjDS.connect(broadcastDS);
 
