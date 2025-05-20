@@ -214,8 +214,6 @@ public class BaseApp {
 
 
 
-
-
 //        StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
 //
 //        env.setParallelism(4);
