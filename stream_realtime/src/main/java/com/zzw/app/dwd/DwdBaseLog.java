@@ -52,7 +52,6 @@ public class DwdBaseLog {
         // 采用EXACTLY_ONCE模式，确保数据处理的准确性，保证每条数据仅被处理一次
         env.enableCheckpointing(5000L, CheckpointingMode.EXACTLY_ONCE);
 
-
         // 使用自定义工具类FlinkSourceUtil获取Kafka数据源
         // 从指定的Kafka主题Constant.TOPIC_LOG中消费数据，消费者组为"dwd_log"
         KafkaSource<String> kafkaSource = FlinkSourceUtil.getKafkaSource(Constant.TOPIC_LOG, "dwd_log");
@@ -227,6 +226,7 @@ public class DwdBaseLog {
                     }
                 }
         );
+
 
         // 获取不同类型日志的侧输出流
         SideOutputDataStream<String> errDS = pageDS.getSideOutput(errTag);
