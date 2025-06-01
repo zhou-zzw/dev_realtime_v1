@@ -205,7 +205,6 @@ public class BaseApp {
                 // 启动Flink作业，作业名为"dim"
                 env.execute("dim");
 
-                
 
 
 
